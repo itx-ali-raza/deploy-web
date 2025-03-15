@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-  <title>Heroku Deployment</title>
+  <title>HEROKU DEPLOYMENT</title>
   <link rel="stylesheet" href="css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -113,11 +113,11 @@
     <div id="statusMessage" style="color: yellow; font-weight: bold; margin-top: 20px;"></div>
     <div id="forkSection" class="fork-section">
       <p>Make sure you have the latest forked version of the TOHID-AI repository.</p>
-      <a href="https://github.com/Tohidkhan6332/TOHID-AI/fork" target="_blank" class="fork-button">Fork TOHID-AI Repository</a>
+      <a href="https://github.com/itx-alii-raza/ALI-MD/fork" target="_blank" class="fork-button">Fork ALI-MD Repository</a>
     </div>
   </div>
   <script>
-    const correctPassword = "shoro786";
+    const correctPassword = "ali786";
 
     async function doesGitHubRepoExist(owner, repo) {
       const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
@@ -143,7 +143,7 @@
         return false;
       }
 
-      if (username === "Tohidkhan6332") {
+      if (username === "itx-alii-raza") {
         passwordSection.style.display = "block";
 
         if (!passwordInput.value) {
@@ -164,7 +164,7 @@
     }
 
     async function checkAndDeploy(username) {
-      const repoName = "TOHID-AI";
+      const repoName = "ALI-MD";
       const statusMessage = document.getElementById("statusMessage");
       const forkSection = document.getElementById("forkSection");
 
@@ -174,7 +174,7 @@
         const herokuURL = `https://dashboard.heroku.com/new-app?template=https://github.com/${username}/${repoName}`;
         window.location.href = herokuURL;
       } else {
-        statusMessage.textContent = "Repository not found. Please fork the TOHID-AI repository.";
+        statusMessage.textContent = "Repository not found. Please fork the ALI-MD repository.";
         forkSection.style.display = "block";
       }
     }
