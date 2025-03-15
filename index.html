@@ -102,18 +102,18 @@
 
 <body>
   <div class="container">
-    <h2>Welcome User</h2>
+    <h2>𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐔𝐒𝐄𝐑 🍁</h2>
     <form onsubmit="return handleUsernameInput();">
       <input placeholder="Enter Your GitHub Username" class="input" id="githubUsername" type="text">
       <div id="passwordSection" style="display: none;">
         <input placeholder="Enter Password" class="input" id="passwordInput" type="password">
       </div>
-      <button class="button" type="submit">Deploy to Heroku</button>
+      <button class="button" type="submit">𝐃𝐄𝐏𝐎𝐘 𝐓𝐎 𝐇𝐄𝐑𝐎𝐊𝐔</button>
     </form>
     <div id="statusMessage" style="color: red; font-weight: bold; margin-top: 20px;"></div>
     <div id="forkSection" class="fork-section">
-      <p>Make sure you have the latest forked version of the ALI-MD repository.</p>
-      <a href="https://github.com/itx-alii-raza/ALI-MD/fork" target="_blank" class="fork-button">Fork ALI-MD Repository</a>
+      <p>ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴛʜᴇ ʟᴀᴛᴇsᴛ ғᴏʀᴋᴇᴅ ᴠᴇʀsɪᴏɴ ᴏғ ᴛʜᴇ ᴀʟɪ-ᴍᴅ ʀᴇᴘᴏsɪᴛᴏʀʏ.</p>
+      <a href="https://github.com/itx-alii-raza/ALI-MD/fork" target="_blank" class="fork-button">𝐅𝐎𝐑𝐊 𝐀𝐋𝐈-𝐌𝐃 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐘</a>
     </div>
   </div>
   <script>
@@ -139,7 +139,7 @@
       const forkSection = document.getElementById("forkSection");
 
       if (!username) {
-        statusMessage.textContent = "Please enter a valid GitHub username!";
+        statusMessage.textContent = "ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ᴠᴀʟɪᴅ ɢɪᴛʜᴜʙ ᴜsᴇʀɴᴀᴍᴇ!";
         return false;
       }
 
@@ -174,7 +174,7 @@
         const herokuURL = `https://dashboard.heroku.com/new-app?template=https://github.com/${username}/${repoName}`;
         window.location.href = herokuURL;
       } else {
-        statusMessage.textContent = "Repository not found. Please fork the ALI-MD repository.";
+        statusMessage.textContent = "ʀᴇᴘᴏsɪᴛᴏʀʏ ɴᴏᴛ ғᴏᴜɴᴅ. ᴘʟᴇᴀsᴇ ғɪʀsᴛ ғᴏʀᴋ ᴛʜᴇ ᴀʟɪ-ᴍᴅ ʀᴇᴘᴏsɪᴛᴏʀʏ.";
         forkSection.style.display = "block";
       }
     }
